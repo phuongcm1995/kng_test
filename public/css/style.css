@@ -1,3 +1,6 @@
 .bg-blue{
     background-color: #E3F1FF;
 }
+.invalid-feedback{
+    display: block;
+}

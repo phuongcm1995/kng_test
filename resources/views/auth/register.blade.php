@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="card">
-                <div class="card-header text-center"><h3>{{ __('Register User') }}</h3></div>
+                <div class="card-header text-center"><h4 class="mb-0">{{ __('Register User') }}</h4></div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -13,7 +13,7 @@
 
                         <div class="row mb-3">
                             <div class="col-md-12">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" autocomplete="name" autofocus placeholder="{{ __('Name') }}">
+                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" autocomplete="name" autofocus placeholder="{{ __('Name') }}">
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -25,7 +25,7 @@
 
                         <div class="row mb-3">
                             <div class="col-md-12">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" autocomplete="email" placeholder="{{ __('Email') }}">
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" autocomplete="email" placeholder="{{ __('Email') }}">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -37,7 +37,7 @@
 
                         <div class="row mb-3">
                             <div class="col-md-12">
-                                <input id="address" type="address" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" autocomplete="address" placeholder="{{ __('Address') }}">
+                                <input id="address" type="address" class="form-control" name="address" value="{{ old('address') }}" autocomplete="address" placeholder="{{ __('Address') }}">
 
                                 @error('address')
                                 <span class="invalid-feedback" role="alert">
@@ -49,7 +49,7 @@
 
                         <div class="row mb-3">
                             <div class="col-md-12">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" autocomplete="new-password" placeholder="{{ __('Password') }}">
+                                <input id="password" type="password" class="form-control" name="password" autocomplete="new-password" placeholder="{{ __('Password') }}">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
